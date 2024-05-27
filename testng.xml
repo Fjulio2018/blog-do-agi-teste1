@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="C:/Desenvolvimento/Java/Projetos/BlogAgi/java-automation-blogdoagi/src/test/java/br/com/blogdoagi/tests/BlogTests.java">
+        <classes>
+            <class name="br.com.blogdoagi.tests.BlogTests">
+                <methods>
+                    <include name="validaMenuOagibank"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
