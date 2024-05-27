@@ -13,24 +13,25 @@ public class BlogTests extends Hooks {
 
     @Test
     public void validaMenuOagibank() {
-        System.out.println("Iniciando teste: validaMenuOagibank");
-        navegador = getNavegador();
-        HomePage homepage = new HomePage(navegador);
-        homepage.acessaHomePage();
-        Assert.assertTrue(homepage.Oagipresenteesta(),"Não esta presente");
+        boolean acessouhomePage = new HomePage(navegador)
+                .acessaHomePage()
+                .Oagipresenteesta();
+        Assert.assertTrue(acessouhomePage, "Não esta presente");
+
     }
+
 
     @Test
-    void acessarCarreiraPage(){
-        System.out.println("Iniciando teste: acessarCarreiraPage");
-        HomePage homepage = new HomePage(navegador);
-        CarreiraPage carreira = homepage.acessarCarreiraPage();
+    void acessarCarreiraPage() {
         String tituloEsperado = "Carreira";
-        String tituloAtual = carreira.getCarreiraTitle();
-        Assert.assertEquals(tituloAtual,tituloEsperado,"Titulo diferente do esperado");
+        String tituloAtual = new HomePage(navegador)
+                .acessaHomePage()
+                .acessarCarreiraPage()
+                .getCarreiraTitle();
+
+        Assert.assertEquals(tituloAtual, tituloEsperado, "Titulo diferente do esperado");
 
 
     }
-
 
 }

@@ -20,9 +20,10 @@ public class HomePage extends BasePage {
         super(navegador);
     }
 
-    public void acessaHomePage(){
+    public HomePage acessaHomePage(){
         System.out.println("Metodo iniciado: acessarHomePage");
         navegador.navigate().to("https://blogdoagi.com.br/");
+        return new HomePage(navegador);
     }
 
     public boolean Oagipresenteesta() {
