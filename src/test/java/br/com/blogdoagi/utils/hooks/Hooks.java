@@ -6,6 +6,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
+import java.util.concurrent.TimeUnit;
+
 
 public class Hooks {
     protected WebDriver navegador;
@@ -14,8 +16,9 @@ public class Hooks {
     public void setUp() {
         WebDriverManager.chromedriver().setup();
         navegador = new ChromeDriver();
-        navegador.navigate().to("https://blogdoagi.com.br/");
         navegador.manage().window().maximize();
+        System.out.println("Metodo iniciado: SetUp");
+
     }
 
     @AfterClass

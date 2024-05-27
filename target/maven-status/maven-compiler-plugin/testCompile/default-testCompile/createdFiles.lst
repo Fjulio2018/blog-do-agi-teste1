@@ -1,4 +1,5 @@
 br\com\blogdoagi\utils\hooks\Hooks.class
 br\com\blogdoagi\pages\BasePage.class
 br\com\blogdoagi\tests\BlogTests.class
+br\com\blogdoagi\pages\CarreiraPage.class
 br\com\blogdoagi\pages\HomePage.class
