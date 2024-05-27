@@ -6,7 +6,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
-import java.util.concurrent.TimeUnit;
 
 public class Hooks {
     protected WebDriver navegador;
@@ -17,7 +16,6 @@ public class Hooks {
         navegador = new ChromeDriver();
         navegador.navigate().to("https://blogdoagi.com.br/");
         navegador.manage().window().maximize();
-        navegador.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
     @AfterClass
@@ -25,10 +23,10 @@ public class Hooks {
         if (navegador != null) {
             navegador.quit();
         }
+
     }
 
-
-    public WebDriver getDriver() {
+    public WebDriver getNavegador() {
         return navegador;
     }
 }

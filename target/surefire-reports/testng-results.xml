@@ -2,20 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-27T12:57:22 BRT" name="All Test Suite" finished-at="2024-05-27T12:57:26 BRT" duration-ms="3425">
+  <suite started-at="2024-05-27T13:46:01 BRT" name="All Test Suite" finished-at="2024-05-27T13:46:04 BRT" duration-ms="3067">
     <groups>
     </groups>
-    <test started-at="2024-05-27T12:57:22 BRT" name="C:/Desenvolvimento/Java/Projetos/BlogAgi/java-automation-blogdoagi/src/test/java/br/com/blogdoagi/tests/BlogTests.java" finished-at="2024-05-27T12:57:26 BRT" duration-ms="3425">
+    <test started-at="2024-05-27T13:46:01 BRT" name="C:/Desenvolvimento/Java/Projetos/BlogAgi/java-automation-blogdoagi/src/test/java/br/com/blogdoagi/tests/BlogTests.java" finished-at="2024-05-27T13:46:04 BRT" duration-ms="3067">
       <class name="br.com.blogdoagi.tests.BlogTests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:br.com.blogdoagi.tests.BlogTests@4f18837a]" started-at="2024-05-27T12:57:22 BRT" name="setUp" finished-at="2024-05-27T12:57:25 BRT" duration-ms="2945" status="PASS">
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:br.com.blogdoagi.tests.BlogTests@1fa268de]" started-at="2024-05-27T13:46:01 BRT" name="setupTest" finished-at="2024-05-27T13:46:01 BRT" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:br.com.blogdoagi.tests.BlogTests@1fa268de]" started-at="2024-05-27T13:46:01 BRT" name="setUp" finished-at="2024-05-27T13:46:02 BRT" duration-ms="1592" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validaMenuOagibank()[pri:0, instance:br.com.blogdoagi.tests.BlogTests@4f18837a]" started-at="2024-05-27T12:57:25 BRT" name="validaMenuOagibank" finished-at="2024-05-27T12:57:25 BRT" duration-ms="192" status="PASS">
+        <test-method signature="validaMenuOagibank()[pri:0, instance:br.com.blogdoagi.tests.BlogTests@1fa268de]" started-at="2024-05-27T13:46:02 BRT" name="validaMenuOagibank" finished-at="2024-05-27T13:46:03 BRT" duration-ms="1123" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validaMenuOagibank -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:br.com.blogdoagi.tests.BlogTests@4f18837a]" started-at="2024-05-27T12:57:25 BRT" name="tearDown" finished-at="2024-05-27T12:57:26 BRT" duration-ms="260" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:br.com.blogdoagi.tests.BlogTests@1fa268de]" started-at="2024-05-27T13:46:03 BRT" name="tearDown" finished-at="2024-05-27T13:46:04 BRT" duration-ms="308" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
