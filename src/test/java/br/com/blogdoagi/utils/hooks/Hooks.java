@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-
+import java.text.Normalizer;
 import java.util.concurrent.TimeUnit;
 
 
@@ -17,6 +17,8 @@ public class Hooks {
         WebDriverManager.chromedriver().setup();
         navegador = new ChromeDriver();
         navegador.manage().window().maximize();
+        navegador.manage().deleteAllCookies();
+        navegador.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         System.out.println("Metodo iniciado: SetUp");
 
     }
@@ -29,7 +31,8 @@ public class Hooks {
 
     }
 
-    public WebDriver getNavegador() {
-        return navegador;
+    public static String normalizarString(String str) {
+        return Normalizer.normalize(str, Normalizer.Form.NFD)
+                .replaceAll("\\p{InCombiningDiacriticalMarks}+", "");
     }
 }
